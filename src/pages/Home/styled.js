@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    width: 100vw;
+export const HomeContainer = styled.div`
     height: 100vh;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+    justify-content: center;
+`
+
+export const Content = styled.div`
+    width: 100vw;    
     display: flex;
     align-itens: center;
     justify-content: center;
@@ -32,4 +38,13 @@ export const Button = styled.button`
     &:active {
         outline: none;
     }
+`
+
+export const ErrorMsg = styled.span`
+    display: flex;
+    justify-content: center;
+    font-size: 0.65rem;
+    color: red;
+    font-weight: 600;
+    margin-top: 1rem;
 `
